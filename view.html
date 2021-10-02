@@ -1,11 +1,3 @@
 <script>
-function hts(str){
-　　　　 var val="";
-　　　　 var arr = str.split(",");
-　　　　 for(arr i = 0; i < arr.length; i++){
-　　　　　　 val += arr[i].fromCharCode(i);
-　　　　 }
-　　　　 return val;
-　　 }
-document.write(hts(location.search.substr(6)))
+document.write(decodeURIComponent(location.search.substr(6)))
 </script>
