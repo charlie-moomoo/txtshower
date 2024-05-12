@@ -1,7 +1,7 @@
 <center>
   <font face="sans-serif" size="95%">txtshower</font><br><!--~~uh~~-->
   <font face="sans-serif" size="60%" id="ururl"></font>
-  <textarea onchange="document.getElementById('ururl').innerHTML='Your Link: <code>https://charlie-moomoo.github.io/txtshower/view?text='+encodeURIComponent(this.value)+'</code>'; document.getElementById('urcopy').value='https://charlie-moomoo.github.io/txtshower/view?text='+encodeURIComponent(this.value); document.getElementById('urcopyb').style('')" style="width:100%;height:100%"></textarea>
+  <textarea onchange="document.getElementById('ururl').innerHTML=`Your Link: <a href="https://charlie-moomoo.github.io/txtshower/view?text=${encodeURIComponent(this.value)}">Here</a>`; document.getElementById('urcopy').value='https://charlie-moomoo.github.io/txtshower/view?text='+encodeURIComponent(this.value); document.getElementById('urcopyb').style('')" style="width:100%;height:100%"></textarea>
   <input id="urcopy" value="why u can copy nothing" style="display:none;"/><button style="display:none" class="copy_coupon" id="urcopyb">Copy</button>
 
 <script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
